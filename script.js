@@ -35,7 +35,7 @@ search.addEventListener('click', () => {
       }
       else {
         hideCity.textContent = 'weather in ' + city;
-        container.style.height = '35rem';
+        container.style.height = '33rem';
         container.classList.add('active');
         weatherBox.classList.add('active');
         weatherDetails.classList.add('active');

@@ -55,7 +55,7 @@ header {
 
 header img {
   border-radius: 50%;
-  width: 2.5vw;
+  width: 34.64px;
   cursor: pointer;
 }
 
@@ -165,12 +165,12 @@ font-size: 1.8rem;
 }
 
 .weather-box img {
-  width: 50%;
+  width: 45%;
 }
 
 .weather-box .temperature {
   position: relative;
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1;
   font-weight: 700;
   margin: 0 0 6px -1.9rem;
@@ -178,7 +178,7 @@ font-size: 1.8rem;
 
 .weather-box .temperature span {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-left: .3rem;
 }
 
@@ -227,26 +227,25 @@ font-size: 1.8rem;
 .weather-details .humidity {
   padding-right: 1.25rem;
   justify-content: flex-end;
-  
 }
 
 .weather-details i {
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   margin-right: .6rem;
 }
 
 .weather-details span {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .weather-details p {
-  font-size: .9rem;
+  font-size: .7rem;
   font-weight: 500;
 }
 
-/* ---------- weather-box section ---------- */
+/* ---------- not found section ---------- */
 .not-found {
   position: absolute;
   top: 0;
@@ -314,7 +313,7 @@ font-size: 1.8rem;
   position: absolute;
   bottom: 0;
   display: flex;
-  justify-content: start; 
+  justify-content: center; 
   width: 100%;
   color: white;
   background-color: transparent;
@@ -328,88 +327,74 @@ font-size: 1.8rem;
 }
 
 /* ---------- CSS Breakpoints ---------- */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  main {
-    padding: 1rem 1rem;
-    margin-top: 2.5rem;
-  }
-
-  header img {
-    width: 11vw;
-  }
-
+/* (375px and down) */
+@media (max-width: 375px){
   .container {
-    width: 100%;
+    max-width: 19rem;
+  }
+
+  .search-box i,
+  .search-box button {
+    font-size: 1.2rem;
   }
 
   .search-box input {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  .search-box input::placeholder {
+    font-size: .97rem;
   }
 
   .weather-details i {
-    font-size: 2.8rem;
-    /* margin-right: .6rem; */
+    font-size: 3rem;
   }
-
+  
   .weather-details span {
-    /* display: inline-block; */
     font-size: 1rem;
-    font-weight: 500;
   }
   
   .weather-details p {
-    font-size: .69rem;
-    font-weight: 500;
+    font-size: .5rem;
   }
 
-  .footer {
-    display: flex;
-    justify-content: center;
+  .weather-details .wind,
+  .weather-details .humidity {
+    padding-left: .3rem;
   }
 
-  .footer p {
-    font-size: .7rem;
+  .weather-details .humidity {
+    padding-right: .3rem;
   }
 
+  .info-wind,
+  .info-humidity span {
+    overflow: hidden;
+  }
+
+  .footer-text p {
+    font-size: .65rem;
+  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-  main {
-    padding: 1rem 1rem;
-    margin-top: 2.5rem;
-  }
-  
-  header img {
-    width: 11vw;
-  }
-  
+/* (425px and down) */
+@media (max-width: 425px) {
   .container {
-    width: 100%;
+    width: 23rem;
   }
-  
-  .search-box input {
-    font-size: 1.3rem;
-  }
-  
+
   .weather-details i {
-    font-size: 2.8rem;
-    
+    font-size: 2.5rem;
   }
-  
+
   .weather-details span {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
   }
   
   .weather-details p {
-    font-size: .69rem;
-    font-weight: 500;
+    font-size: .8rem;
   }
-  
-} */
-
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {} */
